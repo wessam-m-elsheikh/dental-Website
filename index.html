@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dental website</title>
+  </head>
+  <body>
+    <div class="appointment">
+      <i><img src="./close.svg" class="close" /></i>
+      <div class="pop-up">
+        <h1 class="heading-2">Get an appointment now</h1>
+        <form>
+          <input
+            type="text"
+            class="input-holder"
+            placeholder="Name"
+            autocomplete="off"
+            required
+          />
+          <input
+            type="email"
+            class="input-holder"
+            placeholder="E-mail"
+            pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}\.com
+          "
+            autocomplete="off"
+            required
+          />
+          <input
+            type="tel"
+            class="input-holder"
+            id="mobile"
+            name="mobile"
+            placeholder="Mobile"
+            pattern="[0-9]{11}"
+            required
+            autocomplete="off"
+          />
+          <div class="radio-btns">
+            <input type="radio" name="time" id="morning" checked />
+            <label for="morning">Morning</label>
+            <input type="radio" id="afternoon" name="time" />
+            <label for="afternoon">Afternoon</label>
+          </div>
+          <input type="date" class="input-holder" />
+          <input type="submit" class="submit staff-btn" />
+          <p class="accepted"></p>
+        </form>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./logo.svg" alt="logo" class="logo-icon" />
+        </div>
+        <div class="content">
+          <ul class="nav-content">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#staff" class="nav-link">Our Staff</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-us" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <button class="btn nav-btn">book now</button>
+          </ul>
+        </div>
+        <img class="menu-btn" src="./squaer.svg" />
+        <div class="drop-menu">
+          <ul class="menu">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#staff" class="nav-link">Our Staff</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-us" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <button class="btn nav-btn">book now</button>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero" id="hero">
+        <div class="hero-content">
+          <h1 class="heading-1">dental clinic</h1>
+          <h2 class="heading-2">Get a brand new smile</h2>
+          <p class="text">
+            Healthy, happy and beautiful smile is what we care for.
+          </p>
+          <form action="#">
+            <input
+              type="email"
+              class="input-holder"
+              placeholder="E-mail"
+              pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}\.com
+          "
+              autocomplete="off"
+              required
+            />
+            <input class="btn submit" type="submit" value="book now" />
+          </form>
+        </div>
+        <div class="image-box">
+          <img class="image" src="./hero image-min.png" alt="denture-image" />
+        </div>
+      </div>
+    </header>
+
+    <!-- --------------------------------------------------------------------- -->
+
+    <section id="about-us">
+      <h1 class="heading-1">we treat you the way we treat our own</h1>
+      <div class="about-us-content">
+        <div class="image-box">
+          <img src="./about-us.png" class="image" />
+        </div>
+        <div class="about-us-text">
+          <h3 class="heading-3">Why Choose Us :</h3>
+          <ul class="about-us-list">
+            <li class="about-us-item">
+              <img src="./icon.png" alt="icon" class="item-icon" />
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </li>
+            <li class="about-us-item">
+              <img src="./icon.png" alt="icon" class="item-icon" />
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </li>
+            <li class="about-us-item">
+              <img src="./icon.png" alt="icon" class="item-icon" />
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </li>
+            <li class="about-us-item">
+              <img src="./icon.png" alt="icon" class="item-icon" />
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </li>
+            <li class="about-us-item">
+              <a href="#" class="item-link">More &#xbb;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------------------------------- -->
+    <section id="staff">
+      <h1 class="heading-1">highly trained staff</h1>
+      <div class="cards">
+        <div class="card-box">
+          <img src="./1st-card.png" alt="card-1" class="card-img" />
+          <!-- <button class="btn staff-btn">book now</button> -->
+        </div>
+        <div class="card-box">
+          <img src="./2nd-card.png" alt="card-2" class="card-img" />
+          <!-- <button class="btn staff-btn">book now</button> -->
+        </div>
+        <div class="card-box">
+          <img src="./3rd-card.png" alt="card-3" class="card-img" />
+          <!-- <button class="btn staff-btn">book now</button> -->
+        </div>
+      </div>
+      <div class="about-us-item center">
+        <a href="#" class="item-link">More &#xbb;</a>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+
+    <section id="reviews">
+      <h1 class="heading-1">how satisfied our cutomers are</h1>
+      <div class="reviews-content">
+        <div class="reviews-box">
+          <div class="reviews">
+            <div class="review">
+              <img src="./icon-1.png" alt="icon 1" class="review-icon" />
+              <div class="review-text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet,
+                </p>
+                <img src="./stars.svg" alt="stars" class="stars" />
+              </div>
+            </div>
+            <div class="review">
+              <img src="./icon-2.png" alt="icon 2" class="review-icon" />
+              <div class="review-text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet,
+                </p>
+                <img src="./stars.svg" alt="stars" class="stars" />
+              </div>
+            </div>
+            <div class="review">
+              <img src="./icon-3.png" alt="icon 3" class="review-icon" />
+              <div class="review-text">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                  ipsum dolor sit amet,
+                </p>
+                <img src="./stars.svg" alt="stars" class="stars" />
+              </div>
+            </div>
+          </div>
+          <div class="about-us-item center">
+            <a href="#" class="item-link">More &#xbb;</a>
+          </div>
+        </div>
+        <div class="services-box">
+          <h3 class="heading-2">Our Services</h3>
+          <div class="services">
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="link">whitening</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Restorations</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">Veneers</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">Orthodontics</a>
+              </li>
+            </ul>
+          </div>
+          <div class="about-us-item center">
+            <a href="#" class="item-link">More &#xbb;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <footer class="footer">
+      <div class="logo">
+        <img src="./logo.svg" alt="logo" class="logo-icon" />
+      </div>
+      <div class="footer-content">
+        <div class="links-side">
+          <div class="line"></div>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">contact us</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">about us</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <div class="line"></div>
+          <p class="text">©Copyright Wessam Elsheikh All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- --------------------------------------------------------------------- -->
+    <script src="./script.js"></script>
+  </body>
+</html>
